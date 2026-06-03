@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+}
+.site-content{
+    width: 100%;
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HomeStartContainer {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../assets/images/bbq.png');
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.HomeTopText{
+    color: #f5bba3;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    padding-left: 35px;
+}
+.HomeMiddleText{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+    padding-top: 20px;
+    width: 40%;
+}
+.HomeBottomText{
+    color: white;
+    font-size: 17px;
+    text-align: left;
+    padding: 30px;
+    padding-top: 20px;
+    width: 40%;
+    word-spacing: 6px;
+    font-weight: 400;
+    color: #f5bba3;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.HomeButton1{
+    background-color: #ff6c2d;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}.HomeButton2{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(173, 173, 173, 0.46);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.HomeBottomButtons{
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+}
+.HomeMiddleContainer{
+    background-color: rgb(20, 20, 20);
+    padding: 50px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.HomeMiddleContainerText h2{
+    color: #f5bba3;
+}
+.HomeMiddleContainerText p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+}
+.HomeMiddleContainerImage{
+    width: 45%;
+}
+.HomeMiddleContainerImage img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px rgb(23, 23, 23);
+}
+.HomeMiddleFlexbox{
+    margin-bottom: -22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.HomeMiddleContainerText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+.HomeMiddleFlexbox i{
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 0px 15px rgb(24, 24, 24);
+    color: #f5bba3;
+    border-radius: 6px;
+    padding: 10px;  
+}
+.HomeBottomContainer{
+    background-color: rgb(28, 28, 28);
+    padding: 50px;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.HomeBottomContainer h2{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+.HomeBottomContainer p{
+    color: #f5bba3;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-weight: 300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    text-align: center;
+}
+.HomeBottomContainerImages{
+    width: 100%;
+    gap: 40px;
+    margin-top: 50px;
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+.BigImage{
+    width: 50%;
+    height: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px rgb(23, 23, 23);
+}
+.BigImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.StackedImages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.SmallImage img{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px rgb(23, 23, 23);
+}
+.ReviewCard{
+    border-left: 4px solid #f5bba3;
+}
+.ReviewCard p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 30px;
+    font-weight: 400;
+    width: 70%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ReviewCard h3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #f5bba3;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.HomeReviewsContainer{
+    background-color: rgb(29, 29, 29);
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px rgb(23, 23, 23);
+    padding: 40px;
+    width: 90%;
+}
+.HomeReviewsFlexbox{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.HomeReviews{
+    margin-top: 50px;
+}
+.HomeReviewsHeader{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.HomeReviewsHeader i{
+    font-size: 3rem;
+    color: #e6dccf3d;
+}

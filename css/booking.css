@@ -1,0 +1,202 @@
+/* Booking page styles */
+:root {
+	--bg: #0f0e0d;
+	--card: #191716;
+	--muted: #bfb6ab;
+	--accent: #f07a22;
+	--panel: #272524;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: var(--bg);
+	color: var(--muted);
+}
+
+.site-content {
+	flex: 1
+}
+
+.hero {
+	background-image: url('../assets/images/bbq.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 80px 0 40px;
+	color: #e8d9cf
+}
+
+.hero:before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(15, 14, 13, 0.6), rgba(15, 14, 13, 0.85));
+}
+
+.hero-inner {
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 80px 20px;
+	text-align: center
+}
+
+.hero h1 {
+	font-family: 'Playfair Display', serif;
+	color: #f6b99a;
+	font-size: 42px;
+	margin: 0 0 12px
+}
+
+.hero p {
+	color: #d7c9bf;
+	margin: 0;
+	font-size: 16px
+}
+
+.booking-wrap {
+	max-width: 1100px;
+	margin: 36px auto;
+	padding: 0 20px
+}
+
+.booking-grid {
+	display: grid;
+	grid-template-columns: 1fr 360px;
+	gap: 28px;
+	align-items: start
+}
+
+.booking-form {
+	display: block
+}
+
+.card {
+	background: var(--card);
+	padding: 22px;
+	border-radius: 4px;
+	margin-bottom: 18px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6)
+}
+
+.card h2 {
+	color: #f2b39a;
+	font-size: 18px;
+	margin: 0 0 14px;
+	display: flex;
+	align-items: center;
+	gap: 10px
+}
+
+.card label {
+	display: block;
+	color: #cfc6bd;
+	font-size: 14px;
+	margin: 10px 0
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"],
+.card input[type="date"],
+.card input[type="number"],
+.card select,
+.card textarea {
+	width: 100%;
+	padding: 10px;
+	background: #121110;
+	border: 1px solid rgba(255, 255, 255, 0.03);
+	color: #d7cdc2;
+	border-radius: 2px;
+	margin-top: 6px;
+	font-size: 14px
+}
+
+.card textarea {
+	resize: vertical
+}
+
+.two-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px
+}
+
+.submit-row {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px
+}
+
+.btn-primary {
+	background: var(--accent);
+	color: #fff;
+	padding: 12px 18px;
+	border-radius: 4px;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2)
+}
+
+.btn-primary i {
+	margin-left: 8px
+}
+
+.booking-aside .aside-card {
+	background: var(--panel);
+	padding: 22px;
+	border-radius: 4px
+}
+
+.booking-aside h3 {
+	color: #f2b39a;
+	margin: 0 0 12px
+}
+
+.reasons {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+.reasons li {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.03)
+}
+
+.reasons li strong {
+	color: #f5bba3
+}
+
+.reasons li span {
+	color: #cfc6bd;
+	font-size: 14px
+}
+
+.aside-image {
+	margin-top: 16px
+}
+
+.aside-image img {
+	width: 100%;
+	border-radius: 4px;
+	display: block
+}
+
+/* Small screens */
+@media (max-width:900px) {
+	.booking-grid {
+		grid-template-columns: 1fr
+	}
+
+	.hero h1 {
+		font-size: 32px
+	}
+}
